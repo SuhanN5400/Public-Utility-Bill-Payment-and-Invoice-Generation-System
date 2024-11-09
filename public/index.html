@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Bill Payment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Utility Bill Payment</h1>
+        <form id="payment-form">
+            <label for="type">Bill Type:</label>
+            <select id="type" name="type">
+                <option value="electricity">Electricity</option>
+                <option value="water">Water</option>
+                <option value="gas">Gas</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="urgent">Urgent:</label>
+            <input type="checkbox" id="urgent" name="urgent">
+
+            <button type="submit">Pay Bill</button>
+        </form>
+
+        <h2>Transaction History</h2>
+        <button id="undo-transaction">Undo Last Transaction</button>
+        <ul id="transaction-history"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
